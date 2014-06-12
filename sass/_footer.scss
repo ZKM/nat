@@ -1,0 +1,70 @@
+/*------------------------------------------------------------------------------------------------------------------------
+ @package: NAT (app)
+
+ @author: Zach Schneider
+ @www: http://zachschneider.com
+ @github: zkm
+
+ @twitter: zkm
+
+ @copyright: COPYRIGHT 6-11-2014
+ =============================================================================
+ Filename: _footer.scss
+ =============================================================================
+ This file is responsible for footer styles on the NAT app.
+ --------------------------------------------------------------------------------------------------------------------- */
+
+footer {
+  background-color: #2c2c2c;
+  clear: both;
+  position: relative;
+  top: -4px;
+  color: #969696;
+  padding: 20px;
+  overflow: hidden;
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    font-size: 1.2em;
+  }
+  .lcol {
+    width: 400px;
+  }
+  nav {
+    display: block;
+    margin-bottom: 10px;
+  }
+  ul {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      display: block;
+      float: left;
+      border-right: 1px solid;
+      
+      a, span {
+        padding: 0 10px;
+      }
+
+      &:first-child {
+        a, span {
+          padding-left: 0;
+        }
+      }
+      &:last-child {
+        border-right: none;
+        float: none;
+        a, span {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

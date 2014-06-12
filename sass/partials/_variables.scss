@@ -1,0 +1,79 @@
+/*------------------------------------------------------------------------------------------------------------------------
+ @package: nat (app)
+
+ @author: Zach Schneider
+ @www: http://zachschneider.com
+ @github: zkm
+
+ @twitter: zkm
+
+ @copyright: COPYRIGHT 6-3-2014
+ =============================================================================
+ Filename: _variables.scss
+ =============================================================================
+ This file is responsible for all variables in the nat app. 
+ --------------------------------------------------------------------------------------------------------------------- */
+
+/* =============================================================================
+Sizes and Spacing
+========================================================================== */
+
+/* Padding */
+$natPadding: 1em !default;
+
+/* Margin */
+$natMargin: 1em !default;
+
+
+/* =============================================================================
+Grid
+========================================================================== */
+$natNum-cols: 12 !default;
+$natRowWidth: 100% !default;
+$natContainer-lateral-padding: $natPadding !default;
+$natCol-margin-right: 3.8% !default;
+$natCol-unit: (($natRowWidth + $natCol-margin-right) / $natNum-cols) !default;
+
+$natRowNotation: row !default;
+$natColumnNotation: col !default;
+
+$natContainer-width: $natRowWidth;
+$natTotal-columns: $natNum-cols;
+$natColumn-width: 4% !default;
+$natGutter-width: 2% !default;
+$natGrid-padding: 0% !default; //rows should take up the whole screen
+$natFrom-direction: left;
+
+$natContainer-style: fluid;
+
+//Turn off media-query fallback output for non-IE stylesheets.
+$natBreakpoint-ie-output: true;
+
+ /* =============================================================================
+Type
+========================================================================== */
+$natEm: 1em !default;
+$natBaseFontSize: 100% !default;
+$natBaseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$natLineHeight: 1.4 !default;
+
+$natHeadingFontWeight: 300 !default;
+$natBaseFontWeight: 500 !default;
+
+/* =============================================================================
+Colors
+========================================================================== */
+$natTextColor: #282b2e !default;
+$natInverseTextColor: invert($natTextColor) !default;
+$natPrimaryColor: #CCC !default; // color of text and main color overall
+$natSecondaryColor: #0f0f0f !default; // color of any components, backgrounds, etc.
+$natTertiaryColor: #7c7c7c !default; //special color to complement secondary color
+//background color.  Should be the opposite of primary color for good results
+$natBodyBackground: $natInverseTextColor !default;
+$natBlue: #0084d9;
+$natWhite: #ffffff;
+
+
+/* Links */
+$natLinkColor: contrast-color($natTextColor, lighten($natTextColor, 30), darken($natTextColor, 30), 40%);
+

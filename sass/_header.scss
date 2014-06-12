@@ -1,0 +1,148 @@
+/*------------------------------------------------------------------------------------------------------------------------
+ @package: nat (app)
+
+ @author: Zach Schneider
+ @www: http://zachschneider.com
+ @github: zkm
+
+ @twitter: zkm
+
+ @copyright: COPYRIGHT 6-3-2014
+ =============================================================================
+ Filename: _type.scss
+ =============================================================================
+ This file is responsible for the header elements on the nat app.
+ --------------------------------------------------------------------------------------------------------------------- */
+
+input[type=search] { 
+  text-align: left;
+  display: block;
+  width: 260px;
+  letter-spacing: 4px;
+  word-spacing: 20px;
+}
+
+.icon-search {
+  position: relative;
+  .search { 
+    text-align: left;
+    display: block;
+    width: 260px;
+    word-spacing: 20px;
+    padding: 7px;
+    margin: 0;
+    font-size: 1.2em;
+    border: none;
+    -moz-box-shadow:    inset 0 0 7px #939393;
+    -webkit-box-shadow: inset 0 0 7px #939393;
+    box-shadow:         inset 0 0 7px #939393;
+  }
+  &:before {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    color: #6a6c6e;
+  }
+}
+header {
+  margin-top: 17px;
+
+  .lcol {
+
+  }
+  .rcol {
+    width: 270px;
+    padding-top: 15px;
+  }
+}
+
+.nav-utility {
+  margin-top: 17px;
+
+  li + li:before{
+    content: " | ";
+    padding: 0 10px;
+  }
+  li {
+    color: $natWhite;
+    font-size: 1.2em;
+    a {
+      color: $natWhite;
+      &:active {
+        color: $natWhite;
+      }
+      &:visited {
+        color: $natWhite;
+      }
+      &:hover {
+        color: $natWhite;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#nav-main {
+  clear: both;
+  padding-top: 28px;
+  li {
+    font-size: 1.2em;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    background-color: #fefefe; // Old browsers
+    @include filter-gradient(#fefefe, #d0d0d0, vertical); // IE6-8
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #fefefe 0%,#f7f7f7 22%,#dbdbdb 73%,#d0d0d0 100%));
+    position: relative;
+    a {
+      display: block;
+      padding: 16px 40px;
+      color: $natTextColor;
+      text-transform: uppercase;
+      font-weight: bold;
+      opacity: 0.8;
+      &:active {
+        color: $natTextColor;
+      }
+      &:visited {
+        color: $natTextColor;
+      }
+      &:hover {
+        color: $natTextColor;
+      }
+    }
+    &:hover {
+      background-color: #e1e3e6;
+      @include filter-gradient(#e1e3e6, #babcbf, vertical);
+      $experimental-support-for-svg: true;
+      @include background-image(linear-gradient(top,  #e1e3e6 0%,#dbdde0 22%,#c3c5c8 73%,#babcbf 100%));      
+    }
+    &:first-child {
+      border-left: 1px solid #bdbdbd;
+      a {
+      }
+    }
+    &:last-child {
+      border-right: 1px solid #bdbdbd;
+      a {
+      }
+    }
+    &.active {
+      padding-top: 5px;
+      top: -3px;
+      @include filter-gradient(#ffffff, #ffffff, vertical);
+      $experimental-support-for-svg: true;
+      @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 99%,rgba(255,255,255,0) 100%));
+      border-top: 1px solid #bdbdbd;
+      border-right: 1px solid #bdbdbd;
+      border-left: 1px solid #bdbdbd;
+      border-bottom: none;
+      a, a:visited, a:active, a:hover {
+        opacity: 1;
+        padding: 16px 50px;
+      }
+    }
+  }
+}
+
+

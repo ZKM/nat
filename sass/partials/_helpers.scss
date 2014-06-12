@@ -1,0 +1,119 @@
+/*------------------------------------------------------------------------------------------------------------------------
+ @package: nat (app)
+
+ @author: Zach Schneider
+ @www: http://zachschneider.com
+ @github: zkm
+
+ @twitter: zkm
+
+ @copyright: COPYRIGHT 6-3-2014
+ =============================================================================
+ Filename: _helpers.scss
+ =============================================================================
+ This file contains all useful helpers (usually used through @extends) in the nat app.
+ --------------------------------------------------------------------------------------------------------------------- */
+
+// Hide visually and from screenreaders, but maintain layout
+%invisible {
+  visibility: hidden;
+}
+
+%visible {
+  visibility: visible;
+}
+
+// Completely hide
+%hide {
+  display: none;
+  visibility: hidden;
+}
+
+
+// The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations. nicolasgallagher.com/micro-clearfix-hack/
+
+%clearfix {
+  zoom: 1; //for IE
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%centred {
+  text-align: center;
+}
+
+/* =============================================================================
+Floats
+========================================================================== */
+%pull-left {
+  float: left;
+}
+%pull-right {
+  float: right;
+}
+
+/* =============================================================================
+Positions
+========================================================================== */
+%absolute {
+  position: absolute;
+}
+
+%fixed {
+  position: fixed;
+}
+
+%relative {
+  position: relative;
+}
+
+%static {
+  position: static;
+}
+
+/* =============================================================================
+Display modes
+========================================================================== */
+%block {
+  display: block;
+}
+
+/* =============================================================================
+Lists
+========================================================================== */
+%no-list-style {
+  list-style: none;
+}
+
+/* =============================================================================
+Links
+========================================================================== */
+%text-decoration-none {
+  text-decoration: none;
+}
+
+/* =============================================================================
+Widths
+========================================================================== */
+%row-width {
+  width: $natRowWidth;
+}
+
+
+/* =============================================================================
+Background Colors
+========================================================================== */
+%white-box {
+  @include filter-gradient(#e3e4e4, #e3e4e4, vertical);
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  rgba(227,228,228,0.8) 0%,rgba(227,228,228,0.8) 100%));
+  position: absolute;
+  bottom: 0;
+  padding: 16px 13px;
+  width: 100%;
+}

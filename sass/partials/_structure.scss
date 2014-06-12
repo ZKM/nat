@@ -1,0 +1,51 @@
+/*------------------------------------------------------------------------------------------------------------------------
+ @package: nat (app)
+
+ @author: Zach Schneider
+ @www: http://zachschneider.com
+ @github: zkm
+
+ @twitter: zkm
+
+ @copyright: COPYRIGHT 6-3-2014
+ =============================================================================
+ Filename: _structure.scss
+ =============================================================================
+ This file is responsible for all structuring elements in the nat app.
+ --------------------------------------------------------------------------------------------------------------------- */
+
+#wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.clear {
+  @extend %clearfix;
+}
+
+.lcol {
+  @extend %pull-left;
+}
+
+.rcol {
+  @extend %pull-right;
+}
+
+nav {
+  ul {
+    @extend %no-list-style;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0;
+      padding: 0;
+      @extend %pull-left;
+      display: block;
+
+      a {
+        font-weight: normal;
+        text-decoration: none;
+      }
+    }
+  }
+}

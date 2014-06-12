@@ -1,0 +1,77 @@
+/*------------------------------------------------------------------------------------------------------------------------
+ @author: Zach Schneider
+ @www: http://zachschneider.com
+ @github: zkm
+
+ @twitter: zkm
+
+ @copyright: COPYRIGHT 6-3-2014
+ =============================================================================
+ Filename: _base.scss
+ =============================================================================
+ This file is responsible for establishing base styles for the nat app.
+ --------------------------------------------------------------------------------------------------------------------- */
+
+html { 
+  background: url('../images/bg.jpg') no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-size: 10px;
+  color: $natTextColor;
+  background: none;
+  line-height: $natLineHeight;
+  font-family: $natBaseFontFamily;
+}
+
+.box {
+  @extend %normal-margin;
+  @extend %border-box;
+  @extend %normal-padding;
+  @extend %bordered;
+  @extend %rounded;
+  @extend %transition-all;
+}
+
+.row {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, p, h1, h2, h3, h4, h5, h6, blockquote, pre, address, cite, code, del, dfn, img, q, dl, ul, fieldset, form, legend, table, caption, summary, audio, video, %normal-margin-bottom {
+  @extend %normal-margin-bottom; //spaced only at bottom by default
+}
+
+nav, nav li, .toolbar, .toolbar li, .btn-group {
+  @extend %inline;
+  ul {
+    @extend %margin-none;
+    @extend %padding-none;
+  }
+  input {
+    @extend %inline;
+  }
+}
+
+/* =============================================================================
+Border Radius
+========================================================================== */
+nav, button, .btn, pre, code, aside, menu {
+  @extend %rounded;
+}
+
+header, footer, article, section {
+  @extend %bordered-bottom;
+  @extend %bordered-top;
+}
+
+/* =============================================================================
+images
+========================================================================== */
+img, object, embed {
+  max-width: $natRowWidth; //prevent images from going beyond the viewport
+}
