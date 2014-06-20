@@ -1,0 +1,55 @@
+/*------------------------------------------------------------------------------------------------------------------------
+ @package: NAT (app)
+
+ @author: Zach Schneider
+ @www: http://zachschneider.com
+ @github: zkm
+
+ @twitter: zkm
+
+ @copyright: COPYRIGHT 6-20-2014
+ =============================================================================
+ Filename: _contests.scss
+ =============================================================================
+ This file is responsible for the right column Newsletter styles on the NAT app.
+ --------------------------------------------------------------------------------------------------------------------- */
+
+#newsletter {
+  form {
+    padding: 10px;
+    background-color: #dbdbdb;
+    overflow: hidden;
+    h2 {
+      margin: 0;
+    }
+    input[type=email] {
+      width: 96%;
+      border: 0;
+      padding: 5px;
+      @include box-shadow (inset 0 0 8px  rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1)); 
+      margin: 10px 0;
+    } 
+    legend {
+      padding: 10px;
+      background-color: #cac9c9;
+      margin-bottom: 9px;
+      p {
+        font-size: 1.2em;
+      }
+      label {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+    }
+    button {
+      float: right;
+    }
+  }
+  footer {
+    background-color: #cac9c9;
+    padding: 7px;
+    text-align: center;
+    border-top: 1px solid #969696;
+    font-size: 1.2em;
+  }
+}

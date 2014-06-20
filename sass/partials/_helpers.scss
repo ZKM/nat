@@ -84,6 +84,21 @@ Display modes
 }
 
 /* =============================================================================
+Button
+========================================================================== */
+%button {
+  font-size: 1.2em;
+  background-color: $natBlue;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 7px 11px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* =============================================================================
 Lists
 ========================================================================== */
 %no-list-style {
@@ -117,3 +132,4 @@ Background Colors
   padding: 16px 13px;
   width: 100%;
 }
+

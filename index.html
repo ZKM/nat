@@ -209,31 +209,47 @@
 
                     <!-- START: Right Column -->
                     <div class="rcol">
-                        <div class="box-255">
-                            <!-- Newsletter Sign Ups -->
-                            <h2>sign up for our newsletter</h2>
-                            <input type="email" placeholder="user@domain.com">
-                            <p><em>Select the newsletters you’d like to receive</em></p>
-                            <input type="checkbox" id="signup-destination">
-                            <label for="signup-destination">Destinations &amp; Getaways</label>
+                        <div id="newsletter" class="box-255">
+                            <form>
+                                <!-- Newsletter Sign Ups -->
+                                <h2>sign up for our newsletter</h2>
+                                <input type="email" placeholder="user@domain.com">
+        
+                                <legend>
+                                    <p><em>Select the newsletters you’d like to receive</em></p>
+                                    <div>
+                                        <input type="checkbox" checked="checked" id="signup-destination">
+                                        <label for="signup-destination">Destinations &amp; Getaways</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked="checked" id="signup-tips">
+                                        <label for="signup-tips">Weekly Travel Tips</label>
+                                    </div>
+                                </legend>
 
-                            <input type="checkbox" id="signup-tips">
-                            <label for="signup-tips">Weekly Travel Tips</label>
+                                <button>sign up</button>
+                            </form>
 
-                            <button>sign up</button>
-                            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+                            <footer>
+                                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+                            </footer>
                         </div>
-                        <div class="box-255">
+                        <div id="contests" class="box-255">
                             <!-- Current Contests -->
                             <h2>current contests</h2>
-                            
-                            <p>Win an all inclusive trip to
-                            visit the famous Yeti Shrine
-                            deep in the heart of Asia</p>
-                            
-                            <p>Win a mystical trip to Bath
-                            that includes a guided tour
-                            of Stonehenge</p>
+                            <aside>
+                                <img src="./images/contests/contest-1.jpg">
+                            </aside>
+                            <article>
+                                <p>Win an all inclusive trip to visit the famous Yeti Shrine deep in the heart of Asia</p>
+                            </article>
+
+                            <aside>
+                                <img src="./images/contests/contest-2.jpg">
+                            </aside>
+                            <article>
+                                <p>Win a mystical trip to Bath that includes a guided tour of Stonehenge</p>
+                            </article>      
                         </div>
             
 
