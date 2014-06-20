@@ -87,3 +87,7 @@ images
 img, object, embed {
   max-width: $natRowWidth; //prevent images from going beyond the viewport
 }
+
+.clearfix {
+  clear: both;
+}

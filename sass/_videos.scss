@@ -1,4 +1,11 @@
-.videos {
+#videos {
+  h2 {
+    position: relative;
+    &:before {
+      @extend %blueLeft;
+    }
+  }
+
   li {
     position: relative;
     display: block;

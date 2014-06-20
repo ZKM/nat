@@ -99,6 +99,25 @@ Button
 
 
 /* =============================================================================
+Ribbons and Headlines
+========================================================================== */
+%blueRibbon {
+  background-color: $natBlue;
+  color: #ffffff;
+  padding: 9px;
+}
+
+%blueLeft {
+  content: "";
+  background-image: url("../images/ribbon-left.png");
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: -33px;
+}
+
+/* =============================================================================
 Lists
 ========================================================================== */
 %no-list-style {

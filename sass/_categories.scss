@@ -1,0 +1,33 @@
+/*------------------------------------------------------------------------------------------------------------------------
+ @package: NAT (app)
+
+ @author: Zach Schneider
+ @www: http://zachschneider.com
+ @github: zkm
+
+ @twitter: zkm
+
+ @copyright: COPYRIGHT 6-20-2014
+ =============================================================================
+ Filename: _categories.scss
+ =============================================================================
+ This file is responsible for categories navigation styles on the NAT app.
+ --------------------------------------------------------------------------------------------------------------------- */
+
+#categories {
+  h2 {
+
+    &:before {
+      @extend %blueLeft;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    li {
+      a {
+        font-size: 1.4em;
+      }
+    }
+  }
+}
