@@ -209,65 +209,77 @@
 
                     <!-- START: Right Column -->
                     <div class="rcol">
-                        <div id="newsletter" class="box-255">
-                            <form>
-                                <!-- Newsletter Sign Ups -->
-                                <h2>sign up for our newsletter</h2>
-                                <input type="email" placeholder="user@domain.com">
-        
-                                <legend>
-                                    <p><em>Select the newsletters you’d like to receive</em></p>
-                                    <div>
-                                        <input type="checkbox" checked="checked" id="signup-destination">
-                                        <label for="signup-destination">Destinations &amp; Getaways</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" checked="checked" id="signup-tips">
-                                        <label for="signup-tips">Weekly Travel Tips</label>
-                                    </div>
-                                </legend>
 
-                                <button>sign up</button>
-                            </form>
+                        <div id="newsletter" class="box-255">
+                            <div class="grayBox">
+                                <form>
+                                    <!-- Newsletter Sign Ups -->
+                                    <h2>sign up for our newsletter</h2>
+                                    <input type="email" placeholder="user@domain.com">
+            
+                                    <legend>
+                                        <p><em>Select the newsletters you’d like to receive</em></p>
+                                        <div>
+                                            <input type="checkbox" checked="checked" id="signup-destination">
+                                            <label for="signup-destination">Destinations &amp; Getaways</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" checked="checked" id="signup-tips">
+                                            <label for="signup-tips">Weekly Travel Tips</label>
+                                        </div>
+                                    </legend>
+
+                                    <button>sign up</button>
+                                </form>
+                            </div>
 
                             <footer>
                                 <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
                             </footer>
                         </div>
-                        <div id="contests" class="box-255">
-                            <!-- Current Contests -->
-                            <h2>current contests</h2>
-                            <aside>
-                                <img src="./images/contests/contest-1.jpg">
-                            </aside>
-                            <article>
-                                <p>Win an all inclusive trip to visit the famous Yeti Shrine deep in the heart of Asia</p>
-                            </article>
 
-                            <aside>
-                                <img src="./images/contests/contest-2.jpg">
-                            </aside>
-                            <article>
-                                <p>Win a mystical trip to Bath that includes a guided tour of Stonehenge</p>
-                            </article>      
+                        <div id="contests" class="box-255">
+                            <div class="grayBox">
+                                <!-- Current Contests -->
+                                <h2>current contests</h2>
+                                <section>
+                                    <aside>
+                                        <img src="./images/contests/contest-1.jpg">
+                                    </aside>
+                                    <article>
+                                        <p>Win an all inclusive trip to visit the famous Yeti Shrine deep in the heart of Asia</p>
+                                    </article>
+                                </section>
+
+                                <section>
+                                    <aside>
+                                        <img src="./images/contests/contest-2.jpg">
+                                    </aside>
+                                    <article>
+                                        <p>Win a mystical trip to Bath that includes a guided tour of Stonehenge</p>
+                                    </article>
+                                </section>
+                            </div>
                         </div>
             
 
                         <!-- Twitter Widget -->
                         <div class="row">
-                            <a class="twitter-timeline" href="https://twitter.com/CrispinMulberry" data-widget-id="473927277571354624">Tweets by @CrispinMulberry</a>
-                            <script>
-                                ! function (d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0],
-                                        p = /^http:/.test(d.location) ? 'http' : 'https';
-                                    if (!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = p + "://platform.twitter.com/widgets.js";
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }
-                                }(document, "script", "twitter-wjs");
-                            </script>
+                            <div class="box-255">
+                                <a class="twitter-timeline" href="https://twitter.com/CrispinMulberry" data-widget-id="473927277571354624">Tweets by @CrispinMulberry</a>
+                                <script>
+                                    ! function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0],
+                                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                                        if (!d.getElementById(id)) {
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = p + "://platform.twitter.com/widgets.js";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }
+                                    }(document, "script", "twitter-wjs");
+                                </script>
+                            </div>
                         </div>
                     </div>
                     <!-- END: Right Column -->

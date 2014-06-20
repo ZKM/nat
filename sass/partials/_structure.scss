@@ -29,6 +29,12 @@
 
 .rcol {
   @extend %pull-right;
+
+  .grayBox {
+    padding: 10px;
+    background-color: #dbdbdb;
+    overflow: hidden;    
+  }
 }
 
 nav {

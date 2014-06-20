@@ -13,3 +13,20 @@
  =============================================================================
  This file is responsible for the right column Contest styles on the NAT app.
  --------------------------------------------------------------------------------------------------------------------- */
+
+#contests {
+  section {
+    clear: both;
+  }
+  aside {
+    float: left;
+    img {
+      padding-right: 15px;
+    }
+  }
+  article {
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
