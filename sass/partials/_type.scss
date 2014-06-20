@@ -36,7 +36,9 @@
   width: 1em;
   margin-right: .2em;
   text-align: center;
-  /* opacity: .8; */
+  position: absolute;
+  z-index: 2;
+  // opacity: .8;
  
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
@@ -57,10 +59,31 @@
 }
  
 .icon-search:before { content: '\e800'; } /* '' */
-.icon-categories:before { content: '\e801'; } /* '' */
-.icon-articles:before { content: '\e802'; } /* '' */
-.icon-signup:before { content: '\e803'; } /* '' */
-.icon-contests:before { content: '\e804'; } /* '' */
+.icon-categories:before {
+  content: '\e801'; 
+  left: -22px;
+}
+.icon-articles:before {
+  content: '\e802';
+  left: -15px;
+}
+.icon-signup:before {
+  content: '\e803';
+  left: -25px;
+  top: -1px;
+}
+.icon-contests:before {
+  content: '\e804';
+  left: -25px;
+  top: -1px;
+}
+.icon-video:before {
+  content: "";
+  background: url("../images/videos/videocam.gif") no-repeat;
+  left: -24px;
+  width: 18px;
+  height: 14px;
+}
 
 /* Type */
 #{headings(all)} {

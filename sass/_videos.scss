@@ -1,7 +1,8 @@
 #videos {
   h2 {
     position: relative;
-    &:before {
+    text-indent: 0;
+    &:after {
       @extend %blueLeft;
     }
   }

@@ -16,8 +16,8 @@
 
 #categories {
   h2 {
-
-    &:before {
+    text-indent: 0;
+    &:after {
       @extend %blueLeft;
     }
   }
