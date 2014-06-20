@@ -14,20 +14,20 @@
  This file is responsible for the right column Contest styles on the NAT app.
  --------------------------------------------------------------------------------------------------------------------- */
 
-#contests {
+#section-contests {
   h2 {
     text-indent: 20px;
   }
-  section {
+  .contest {
     clear: both;
   }
-  aside {
+  .featured {
     float: left;
     img {
       padding-right: 15px;
     }
   }
-  article {
+  .copy {
     p {
       font-size: 1.2em;
     }
