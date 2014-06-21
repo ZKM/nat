@@ -92,7 +92,7 @@
 
 ul, ol, dl {
   padding-left: $natPadding;
-  @extend %normal-margin-top-bottom;
+  @extend %normal-margin-top-bottom !optional;
 }
 
 h1, h2, h3, h4, h5 {

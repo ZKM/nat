@@ -1,0 +1,34 @@
+/*------------------------------------------------------------------------------------------------------------------------
+ @package: nat (app)
+
+ @author: Zach Schneider
+ @www: http://zachschneider.com
+ @github: zkm
+
+ @twitter: zkm
+
+ @copyright: COPYRIGHT 6-21-2014
+ =============================================================================
+ Filename: _ie.scss
+ =============================================================================
+ This file is responsible for the IE fixes on the nat app.
+ --------------------------------------------------------------------------------------------------------------------- */
+
+.oldie {
+  // Fix for the header navigation
+  #nav-main {
+    li {
+      a {
+        padding: 16px 38px;
+      }
+    }
+  }
+  #section-video {
+    li {
+      width: 200px;
+      a {
+
+      }
+    }
+  }
+}

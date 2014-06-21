@@ -24,6 +24,8 @@
     z-index: 200;
     h2 {
       margin: 0;
+      padding: 0;
+      text-indent: 0;
       text-transform: uppercase;
       font-size: 2.4em;
       color: $natTextColor;
@@ -45,7 +47,7 @@
       display: block;
       float: left;
       position: relative;
-
+      width: 160px;
       img {
         display: block;
         margin: 0;

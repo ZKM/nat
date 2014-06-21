@@ -1,4 +1,6 @@
 /*------------------------------------------------------------------------------------------------------------------------
+ @package: nat (app)
+
  @author: Zach Schneider
  @www: http://zachschneider.com
  @github: zkm
@@ -37,16 +39,16 @@ i, em {
 }
 
 button {
-  @extend %button;
+  @extend %button !optional;
 }
 
 .box {
-  @extend %normal-margin;
-  @extend %border-box;
-  @extend %normal-padding;
-  @extend %bordered;
-  @extend %rounded;
-  @extend %transition-all;
+  @extend %normal-margin !optional;
+  @extend %border-box !optional;
+  @extend %normal-padding !optional;
+  @extend %bordered !optional;
+  @extend %rounded !optional;
+  @extend %transition-all !optional;
 }
 
 .row {
@@ -55,17 +57,17 @@ button {
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, p, h1, h2, h3, h4, h5, h6, blockquote, pre, address, cite, code, del, dfn, img, q, dl, ul, fieldset, form, legend, table, caption, summary, audio, video, %normal-margin-bottom {
-  @extend %normal-margin-bottom; //spaced only at bottom by default
+  @extend %normal-margin-bottom !optional; //spaced only at bottom by default
 }
 
 nav, nav li, .toolbar, .toolbar li, .btn-group {
-  @extend %inline;
+  @extend %inline !optional;
   ul {
-    @extend %margin-none;
-    @extend %padding-none;
+    @extend %margin-none !optional;
+    @extend %padding-none !optional;
   }
   input {
-    @extend %inline;
+    @extend %inline !optional;
   }
 }
 
@@ -73,12 +75,12 @@ nav, nav li, .toolbar, .toolbar li, .btn-group {
 Border Radius
 ========================================================================== */
 nav, button, .btn, pre, code, aside, menu {
-  @extend %rounded;
+  @extend %rounded !optional;
 }
 
 header, footer, article, section {
-  @extend %bordered-bottom;
-  @extend %bordered-top;
+  @extend %bordered-bottom !optional;
+  @extend %bordered-top !optional;
 }
 
 /* =============================================================================
