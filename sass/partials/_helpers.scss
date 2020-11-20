@@ -16,139 +16,135 @@
 
 // Hide visually and from screenreaders, but maintain layout
 %invisible {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 %visible {
-  visibility: visible;
+	visibility: visible;
 }
 
 // Completely hide
 %hide {
-  display: none;
-  visibility: hidden;
+	display: none;
+	visibility: hidden;
 }
 
-
 // The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations. nicolasgallagher.com/micro-clearfix-hack/
-
 %clearfix {
-  zoom: 1; //for IE
-  &:before, &:after {
-    content: "";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+	zoom: 1; //for IE
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
 }
 
 %centred {
-  text-align: center;
+	text-align: center;
 }
 
 /* =============================================================================
 Floats
 ========================================================================== */
 %pull-left {
-  float: left;
+	float: left;
 }
 %pull-right {
-  float: right;
+	float: right;
 }
 
 /* =============================================================================
 Positions
 ========================================================================== */
 %absolute {
-  position: absolute;
+	position: absolute;
 }
 
 %fixed {
-  position: fixed;
+	position: fixed;
 }
 
 %relative {
-  position: relative;
+	position: relative;
 }
 
 %static {
-  position: static;
+	position: static;
 }
 
 /* =============================================================================
 Display modes
 ========================================================================== */
 %block {
-  display: block;
+	display: block;
 }
 
 /* =============================================================================
 Button
 ========================================================================== */
 %button {
-  font-size: 1.2em;
-  background-color: $natBlue;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 7px 11px;
-  margin: 0;
-  border: none;
-  cursor: pointer;
+	font-size: 1.2em;
+	background-color: $natBlue;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 7px 11px;
+	margin: 0;
+	border: none;
+	cursor: pointer;
 }
-
 
 /* =============================================================================
 Ribbons and Headlines
 ========================================================================== */
 %blueRibbon {
-  background-color: $natBlue;
-  color: #ffffff;
-  padding: 9px;
+	background-color: $natBlue;
+	color: #ffffff;
+	padding: 9px;
 }
 
 %blueLeft {
-  content: "";
-  background-image: url("../images/ribbon-left.png");
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 0;
-  left: -33px;
+	content: "";
+	background-image: url("../images/ribbon-left.png");
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 0;
+	left: -33px;
 }
 
 /* =============================================================================
 Lists
 ========================================================================== */
 %no-list-style {
-  list-style: none;
+	list-style: none;
 }
 
 /* =============================================================================
 Links
 ========================================================================== */
 %text-decoration-none {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 /* =============================================================================
 Widths
 ========================================================================== */
 %row-width {
-  width: $natRowWidth;
+	width: $natRowWidth;
 }
-
 
 /* =============================================================================
 Background Colors
 ========================================================================== */
 %white-box {
-  @include filter-gradient(#e3e4e4, #e3e4e4, vertical);
-  $experimental-support-for-svg: true;
-  @include background-image(linear-gradient(top,  rgba(227,228,228,0.8) 0%,rgba(227,228,228,0.8) 100%));
-  position: absolute;
-  bottom: 0;
-  padding: 16px 13px;
-  width: 100%;
+	@include filter-gradient($whiteBoxColor, $whiteBoxColor, vertical);
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top,  rgba(227,228,228,0.8) 0%,rgba(227,228,228,0.8) 100%));
+	position: absolute;
+	bottom: 0;
+	padding: 16px 13px;
+	width: 100%;
 }
-

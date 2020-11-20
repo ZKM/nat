@@ -14,82 +14,136 @@
  This file is responsible for establishing base styles for the nat app.
  --------------------------------------------------------------------------------------------------------------------- */
 
-html { 
-  background: url('../images/bg.jpg') no-repeat top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+html {
+	background: url('../images/bg.jpg') no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 body {
-  font-size: 10px;
-  color: $natTextColor;
-  background: none;
-  line-height: $natLineHeight;
-  font-family: $natBaseFontFamily;
+	font-size: 10px;
+	color: $natTextColor;
+	background: none;
+	line-height: $natLineHeight;
+	font-family: $natBaseFontFamily;
 }
 
-b, strong {
-  font-weight: bold;
+b,
+strong {
+	font-weight: bold;
 }
 
-i, em {
-  font-style: italic;
+i,
+em {
+	font-style: italic;
 }
 
 button {
-  @extend %button !optional;
+	@extend %button !optional;
 }
 
 .box {
-  @extend %normal-margin !optional;
-  @extend %border-box !optional;
-  @extend %normal-padding !optional;
-  @extend %bordered !optional;
-  @extend %rounded !optional;
-  @extend %transition-all !optional;
+	@extend %normal-margin !optional;
+	@extend %border-box !optional;
+	@extend %normal-padding !optional;
+	@extend %bordered !optional;
+	@extend %rounded !optional;
+	@extend %transition-all !optional;
 }
 
 .row {
-  margin-bottom: 20px;
-  clear: both;
+	margin-bottom: 20px;
+	clear: both;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, p, h1, h2, h3, h4, h5, h6, blockquote, pre, address, cite, code, del, dfn, img, q, dl, ul, fieldset, form, legend, table, caption, summary, audio, video, %normal-margin-bottom {
-  @extend %normal-margin-bottom !optional; //spaced only at bottom by default
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+address,
+cite,
+code,
+del,
+dfn,
+img,
+q,
+dl,
+ul,
+fieldset,
+form,
+legend,
+table,
+caption,
+summary,
+audio,
+video,
+%normal-margin-bottom {
+	@extend %normal-margin-bottom !optional; //spaced only at bottom by default
 }
 
-nav, nav li, .toolbar, .toolbar li, .btn-group {
-  @extend %inline !optional;
-  ul {
-    @extend %margin-none !optional;
-    @extend %padding-none !optional;
-  }
-  input {
-    @extend %inline !optional;
-  }
+nav,
+nav li,
+.toolbar,
+.toolbar li,
+.btn-group {
+	@extend %inline !optional;
+	ul {
+		@extend %margin-none !optional;
+		@extend %padding-none !optional;
+	}
+	input {
+		@extend %inline !optional;
+	}
 }
 
 /* =============================================================================
 Border Radius
 ========================================================================== */
-nav, button, .btn, pre, code, aside, menu {
-  @extend %rounded !optional;
+nav,
+button,
+.btn,
+pre,
+code,
+aside,
+menu {
+	@extend %rounded !optional;
 }
 
-header, footer, article, section {
-  @extend %bordered-bottom !optional;
-  @extend %bordered-top !optional;
+header,
+footer,
+article,
+section {
+	@extend %bordered-bottom !optional;
+	@extend %bordered-top !optional;
 }
 
 /* =============================================================================
 images
 ========================================================================== */
-img, object, embed {
-  max-width: $natRowWidth; //prevent images from going beyond the viewport
+img,
+object,
+embed {
+	max-width: $natRowWidth; //prevent images from going beyond the viewport
 }
 
 .clearfix {
-  clear: both;
+	clear: both;
 }

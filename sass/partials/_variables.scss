@@ -24,7 +24,6 @@ $natPadding: 1em !default;
 /* Margin */
 $natMargin: 1em !default;
 
-
 /* =============================================================================
 Grid
 ========================================================================== */
@@ -49,7 +48,7 @@ $natContainer-style: fluid;
 //Turn off media-query fallback output for non-IE stylesheets.
 $natBreakpoint-ie-output: true;
 
- /* =============================================================================
+/* =============================================================================
 Type
 ========================================================================== */
 $natEm: 1em !default;
@@ -65,15 +64,29 @@ Colors
 ========================================================================== */
 $natTextColor: #282b2e !default;
 $natInverseTextColor: invert($natTextColor) !default;
-$natPrimaryColor: #CCC !default; // color of text and main color overall
+$natPrimaryColor: #ccc !default; // color of text and main color overall
 $natSecondaryColor: #0f0f0f !default; // color of any components, backgrounds, etc.
 $natTertiaryColor: #7c7c7c !default; //special color to complement secondary color
 //background color.  Should be the opposite of primary color for good results
 $natBodyBackground: $natInverseTextColor !default;
 $natBlue: #0084d9;
 $natWhite: #ffffff;
+$natBackgroundColor: #cac9c9;
+$natFooterBackgroundColor: #2c2c2c;
+$natBorderColor: #969696;
+$natNavBorderColor: #bdbdbd;
+$natNavBackgroundColor: #fefefe;
+$whiteBoxColor: #e3e4e4;
+$grayBoxColor: #dbdbdb;
+$shadowColor: #939393;
+$searchTextColor: #6a6c6e;
+$natFilterPrimaryColor: #f7f7f7;
+$natFilterSecondary: #d0d0d0;
+$natHoverBackgroundColor: #e1e3e6;
+$natHoverFilterColor: #babcbf;
+$natHoverFilterSecondaryColor: #dbdde0;
+$natHoverFilterShadowColor: #c3c5c8;
 
 
 /* Links */
 $natLinkColor: contrast-color($natTextColor, lighten($natTextColor, 30), darken($natTextColor, 30), 40%);
-

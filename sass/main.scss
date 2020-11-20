@@ -2,12 +2,12 @@
  @package: NAT (app)
 
  @author: Zach Schneider
- @www: http://zachschneider.com
- @github: zkm
+ @www: https://zachschneider.com
+ @github: ZKM
 
- @twitter: zkm
+ @twitter: ZKM
 
- @copyright: COPYRIGHT 6-3-2014
+ @copyright: COPYRIGHT 06-03-2014
  =============================================================================
  Filename: main.scss
  =============================================================================
@@ -22,26 +22,26 @@ Imports
 ========================================================================== */
 @import "compass/reset";
 @import "compass/css3";
-@import "partials/_mixins.scss";
-@import "partials/_variables.scss";
-@import "partials/_type.scss";
-@import "partials/_helpers.scss";
-@import "partials/_base.scss";
-@import "partials/_structure.scss";
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/type";
+@import "partials/helpers";
+@import "partials/base";
+@import "partials/structure";
 
 /* =============================================================================
  Styles
 ========================================================================== */
-@import "_carousel.scss";
-@import "_header.scss";
-@import "_categories.scss";
-@import "_content.scss";
-@import "_videos.scss";
-@import "_newsletterForm.scss";
-@import "_contests.scss";
-@import "_footer.scss";
+@import "carousel";
+@import "header";
+@import "categories";
+@import "content";
+@import "videos";
+@import "newsletterForm";
+@import "contests";
+@import "footer";
 
 /* =============================================================================
  IE Fixes
 ========================================================================== */
-@import "_ie.scss";
+@import "ie";

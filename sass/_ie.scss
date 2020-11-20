@@ -15,20 +15,17 @@
  --------------------------------------------------------------------------------------------------------------------- */
 
 .oldie {
-  // Fix for the header navigation
-  #nav-main {
-    li {
-      a {
-        padding: 16px 38px;
-      }
-    }
-  }
-  #section-video {
-    li {
-      width: 200px;
-      a {
-
-      }
-    }
-  }
+	// Fix for the header navigation
+	#nav-main {
+		li {
+			a {
+				padding: 16px 38px;
+			}
+		}
+	}
+	#section-video {
+		li {
+			width: 200px;
+		}
+	}
 }

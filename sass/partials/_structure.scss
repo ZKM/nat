@@ -15,43 +15,43 @@
  --------------------------------------------------------------------------------------------------------------------- */
 
 #wrapper {
-  width: 1000px;
-  margin: 0 auto;
+	width: 1000px;
+	margin: 0 auto;
 }
 
 .clear {
-  @extend %clearfix;
+	@extend %clearfix;
 }
 
 .lcol {
-  @extend %pull-left;
+	@extend %pull-left;
 }
 
 .rcol {
-  @extend %pull-right;
+	@extend %pull-right;
 
-  .grayBox {
-    padding: 10px;
-    background-color: #dbdbdb;
-    overflow: hidden;    
-  }
+	.grayBox {
+		padding: 10px;
+		background-color: $grayBoxColor;
+		overflow: hidden;
+	}
 }
 
 nav {
-  ul {
-    @extend %no-list-style;
-    margin: 0;
-    padding: 0;
-    li {
-      margin: 0;
-      padding: 0;
-      @extend %pull-left;
-      display: block;
+	ul {
+		@extend %no-list-style;
+		margin: 0;
+		padding: 0;
+		li {
+			margin: 0;
+			padding: 0;
+			@extend %pull-left;
+			display: block;
 
-      a {
-        font-weight: normal;
-        text-decoration: none;
-      }
-    }
-  }
+			a {
+				font-weight: normal;
+				text-decoration: none;
+			}
+		}
+	}
 }

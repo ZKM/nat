@@ -15,62 +15,62 @@
  --------------------------------------------------------------------------------------------------------------------- */
 
 #main_carousel {
-  position: relative;
+	position: relative;
 
-  #caption {
-    @extend %white-box;
-    width: 96.2%;
-    bottom: 0;
-    z-index: 200;
-    h2 {
-      margin: 0;
-      padding: 0;
-      text-indent: 0;
-      text-transform: uppercase;
-      font-size: 2.4em;
-      color: $natTextColor;
-      font-weight: bold;
-      background-color: transparent;
-    }
-    p {
-      font-size: 1.4em;
-      font-weight: normal;
-      color: $natTextColor;
-    }
-  }
+	#caption {
+		@extend %white-box;
+		width: 96.2%;
+		bottom: 0;
+		z-index: 200;
+		h2 {
+			margin: 0;
+			padding: 0;
+			text-indent: 0;
+			text-transform: uppercase;
+			font-size: 2.4em;
+			color: $natTextColor;
+			font-weight: bold;
+			background-color: transparent;
+		}
+		p {
+			font-size: 1.4em;
+			font-weight: normal;
+			color: $natTextColor;
+		}
+	}
 
-  #pager {
-    margin-top: 10px; 
-    a {
-      margin-left: .01em;
-      border: 3px solid transparent;
-      display: block;
-      float: left;
-      position: relative;
-      width: 160px;
-      img {
-        display: block;
-        margin: 0;
-        padding: 0;
-      }
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {    }
-      &:hover, &.cycle-pager-active {
-        border: 3px solid #0084d9;
-        
-        &:after {
-          content: "";
-          display: block;
-          border-left: 5px solid transparent;
-          border-right: 5px solid transparent;
-          border-bottom: 5px solid #0084d9;
-          position: absolute;
-          top: -8px;
-          left: 50%;
-        }
-      }
-    }
-  }
+	#pager {
+		margin-top: 10px;
+		a {
+			margin-left: .01em;
+			border: 3px solid transparent;
+			display: block;
+			float: left;
+			position: relative;
+			width: 160px;
+			img {
+				display: block;
+				margin: 0;
+				padding: 0;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+			&:hover,
+			&.cycle-pager-active {
+				border: 3px solid $natBlue;
+
+				&:after {
+					content: "";
+					display: block;
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					border-bottom: 5px solid $natBlue;
+					position: absolute;
+					top: -8px;
+					left: 50%;
+				}
+			}
+		}
+	}
 }

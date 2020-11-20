@@ -15,19 +15,19 @@
  --------------------------------------------------------------------------------------------------------------------- */
 
 #section-category {
-  h2 {
-    text-indent: 0;
-    &:after {
-      @extend %blueLeft;
-    }
-  }
+	h2 {
+		text-indent: 0;
+		&:after {
+			@extend %blueLeft;
+		}
+	}
 
-  ul {
-    padding-left: 0;
-    li {
-      a {
-        font-size: 1.4em;
-      }
-    }
-  }
+	ul {
+		padding-left: 0;
+		li {
+			a {
+				font-size: 1.4em;
+			}
+		}
+	}
 }
